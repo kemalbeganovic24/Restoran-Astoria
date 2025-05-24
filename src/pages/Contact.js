@@ -2,7 +2,9 @@ import React from 'react';
 
 function Contact(){
     return (
-        <h1>Kako nas kontaktirati?</h1>
+        <div className="content">
+            <h1>Kako nas kontaktirati?</h1>
+        </div>
     );
 }
 export default Contact;
