@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "ime": "kemal",
+      "email": "kemal@size.ba",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": "1f4e",
+      "ime": "emir",
+      "email": "emir@size.ba",
+      "password": "123",
+      "role": "gost"
+    },
+    {
+      "id": "81b9",
+      "ime": "ramo",
+      "email": "ramo@size.ba",
+      "password": "123",
+      "rola": "gost"
+    }
+  ],
+  "orders": [
+    {
+      "id": "8453",
+      "items": [
+        "Salata sa tunjevinom",
+        "Pasta Carbonara"
+      ],
+      "approved": true,
+      "korisnik": "emir"
+    },
+    {
+      "id": "17f8",
+      "items": [
+        "Pasta Carbonara",
+        "Piletina s rižom",
+        "Pizza Margherita"
+      ],
+      "approved": false,
+      "korisnik": "emir"
+    }
+  ]
+}
