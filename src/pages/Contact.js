@@ -1,10 +1,8 @@
 import React from 'react';
 
-function Contact(){
+function Home(){
     return (
-        <div className="content">
-            <h1>Kako nas kontaktirati?</h1>
-        </div>
+        <h1>HELLO BRO</h1>
     );
 }
-export default Contact;
+export default Home;
