@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { useNavigate } from "react-router-dom";
 import LoginForma from "../components/LoginForma";
-import RegisterForm from "../components/RegisterForma";
+import RegisterForma from "../components/RegisterForma";
 import '../assets/styles/login.css'
 
 function Login({onLogin}) {
@@ -25,6 +25,7 @@ function Login({onLogin}) {
     };
     const handleRegister = (korisnik) => {
         console.log('Pokusaj registracije:',korisnik);
+        setPrikaziRegistaciju(false);
     }
     return (
         <div className="login-wrapper">
@@ -40,7 +41,7 @@ function Login({onLogin}) {
                 </div>
 
                 {prikaziRegistraciju ? (
-                    <RegisterForm onRegister={handleRegister} />
+                    <RegisterForma onRegister={handleRegister} />
                 ) : (
                     <LoginForma onLogin={handleLogin} />
                 )}
