@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function RegisterForma({onRegister}){
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [ime, setIme] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit= async (e) => {
 
@@ -31,6 +33,7 @@ function RegisterForma({onRegister}){
                 setEmail('');
                 setPassword('');
                 onRegister(upisanKorisnik);
+                navigate('/login');
             } else {
                 alert('Greška prilikom registracije');
             }
