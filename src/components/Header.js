@@ -19,7 +19,7 @@ function Header({ korisnik, onLogout }) {
     const handleLogout = () => {
         localStorage.removeItem('ulogovaniKorisnik');
         localStorage.removeItem('role');
-        onLogout(); // obavještava App.js
+        onLogout(); 
         navigate('/');
     };
 
