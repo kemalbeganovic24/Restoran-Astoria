@@ -19,7 +19,7 @@ import RegisterForma from "./components/RegisterForma";
 
 
 function App() {
-  const [ulogovaniKorisnik, setUlogovaniKorisnik] = useState(JSON.parse(localStorage.getItem('ulogovaniKorisnik')));
+  const [ulogovaniKorisnik, setUlogovaniKorisnik] = useState(null);
 
 
   useEffect(() => {
