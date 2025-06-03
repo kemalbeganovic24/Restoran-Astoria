@@ -1,4 +1,3 @@
-/* CENTRIRAJ CIJELI EKRAN */
 .login-wrapper {
     display: flex;
     justify-content: center;
@@ -7,7 +6,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* BIJELA KARTICA */
+
 .login-box {
     background-color: white;
     padding: 30px 40px;
@@ -19,7 +18,7 @@
     text-align: center;
 }
 
-/* NASLOV NA VRHU */
+
 .login-title {
     margin: 0;
     font-size: 32px;
@@ -27,7 +26,7 @@
     margin-bottom: 360px;
 }
 
-/* TABS ZA PRIJAVA/REGISTRACIJA */
+
 .login-tabs {
     display: flex;
     justify-content: center;
@@ -57,7 +56,7 @@
     color: white;
 }
 
-/* FORMA INPUTI */
+
 form {
     display: flex;
     flex-direction: column;
@@ -84,7 +83,6 @@ form input:focus {
     border-color: #000000;
 }
 
-/* SUBMIT DUGME */
 form button[type="submit"] {
     padding: 12px;
     background-color: #000000;
