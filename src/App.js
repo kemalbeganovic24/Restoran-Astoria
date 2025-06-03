@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Header from './components/Header'
@@ -9,22 +9,57 @@ import Meni from './pages/Meni'
 import Order from './pages/Order'
 import Contact from './pages/Contact'
 import About from './pages/About'
+import Sidebar from './components/Sidebar'
+import Admin from './pages/Admin'
+import Kontakte from './pages/KontaktPoruke'
 import '../src/assets/styles/stilovi.css'
+import {useEffect, useState} from "react";
+import Welcome from "./pages/welcome";
+
 
 
 function App() {
+  const [ulogovaniKorisnik, setUlogovaniKorisnik] = useState(JSON.parse(localStorage.getItem('ulogovaniKorisnik')));
+
+
+  useEffect(() => {
+    const spremljeniKorisnik = localStorage.getItem('ulogovaniKorisnik');
+    if (spremljeniKorisnik) {
+      setUlogovaniKorisnik(JSON.parse(spremljeniKorisnik));
+    }
+  }, []);
+  const handleLogout= () =>{
+    localStorage.removeItem('ulogovaniKorisnik');
+    localStorage.removeItem('role');
+    setUlogovaniKorisnik(null);
+  }
   return (
     <Router>
-      <div>
-        <Header />
-        <main>
+      <div className="wrapper">
+        {}
+        {}
+        <Header korisnik={ulogovaniKorisnik} onLogout={handleLogout}/>
+        <main style={{paddingTop: '80px' }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+              <Route path="/meni" element={<Meni />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/meni" element={<Meni />} />
-            <Route path="/order" element={<Order />}/>
+              <Route path="/order" element={<Order />} />
+            <Route path="/login" element={<Login onLogin={setUlogovaniKorisnik} />} />
+            <Route path="/welcome" element={<Welcome />} />
+            <Route path="/admin" element={
+              <>
+                <Sidebar />
+                <Admin />
+              </>
+            } />
+            <Route path="/admin/poruke" element={
+              <>
+                <Sidebar />
+                <Kontakte />
+              </>
+            } />
           </Routes>
         </main>
       </div>
