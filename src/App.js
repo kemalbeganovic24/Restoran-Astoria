@@ -1,4 +1,3 @@
-
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Header from './components/Header'
@@ -15,6 +14,7 @@ import Kontakte from './pages/KontaktPoruke'
 import '../src/assets/styles/stilovi.css'
 import {useEffect, useState} from "react";
 import Welcome from "./pages/welcome";
+import RegisterForma from "./components/RegisterForma";
 
 
 
@@ -46,6 +46,7 @@ function App() {
               <Route path="/meni" element={<Meni />} />
             <Route path="/contact" element={<Contact />} />
               <Route path="/order" element={<Order />} />
+            <Route path="/register" element={<RegisterForma onRegister={setUlogovaniKorisnik} />} />
             <Route path="/login" element={<Login onLogin={setUlogovaniKorisnik} />} />
             <Route path="/welcome" element={<Welcome />} />
             <Route path="/admin" element={
