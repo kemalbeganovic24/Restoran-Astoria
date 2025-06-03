@@ -1,0 +1,10 @@
+Komande za korištenje:
+
+1. npm install
+2. Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+3. npm start (jedan server za stranicu a drugi napraviti za server)
+
+1. Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+2. json-server --watch db.json --port 5002
+
+CTRL + C za prekidanje
