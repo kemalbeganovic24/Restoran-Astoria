@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "ime": "kemal",
+      "email": "kemal@size.ba",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": "1f4e",
+      "ime": "emir",
+      "email": "emir@size.ba",
+      "password": "123",
+      "role": "gost"
+    },
+    {
+      "id": "b845",
+      "ime": "Ramo",
+      "email": "ramo@size.ba",
+      "password": "123",
+      "role": "gost"
+    },
+    {
+      "id": "3b4e",
+      "ime": "Anes",
+      "email": "anes@size.ba",
+      "password": "123",
+      "role": "gost"
+    },
+    {
+      "id": "8d0b",
+      "ime": "Faris",
+      "email": "faris@size.ba",
+      "password": "123",
+      "role": "gost"
+    },
+    {
+      "id": "a344",
+      "ime": "zele",
+      "email": "zele@size.ba",
+      "password": "123",
+      "role": "gost"
+    }
+  ],
+  "orders": [
+    {
+      "id": "2327",
+      "items": [
+        {
+          "id": 2,
+          "naziv": "Pohovana Piletina"
+        },
+        {
+          "id": 4,
+          "naziv": "Maslanica"
+        },
+        {
+          "id": 7,
+          "naziv": "Uštipci sa sirom"
+        }
+      ],
+      "approved": true,
+      "korisnik": "emir"
+    },
+    {
+      "id": "fb3b",
+      "items": [
+        {
+          "id": 5,
+          "naziv": "Filertto di pollo"
+        },
+        {
+          "id": 7,
+          "naziv": "Uštipci sa sirom"
+        },
+        {
+          "id": 2,
+          "naziv": "Pohovana Piletina"
+        }
+      ],
+      "approved": false,
+      "korisnik": "emir"
+    }
+  ],
+  "kontaktPoruke": [
+    {
+      "id": "7818",
+      "name": "Bakir",
+      "lastName": "Beganovic",
+      "email": "bakir@bega.com",
+      "phone": "062478965",
+      "message": "Svaka cast kemale na ovoj aplikaciji!"
+    },
+    {
+      "id": "9655",
+      "name": "Amel",
+      "lastName": "Kolas",
+      "email": "amel@size.ba",
+      "phone": "062894523",
+      "message": "Moje iskustvo je veoma zadovoljavajuće!"
+    },
+    {
+      "id": "6b51",
+      "name": "ramorrrr",
+      "lastName": "ramic",
+      "email": "ramoko@ramic.com",
+      "phone": "062123456",
+      "message": "lele dobra ova piletina!"
+    },
+    {
+      "id": "ff72",
+      "name": "ramorrrr",
+      "lastName": "ramic",
+      "email": "ramoko@ramic.com",
+      "phone": "062123456",
+      "message": "lele dobra ova piletina!"
+    }
+  ]
+}
