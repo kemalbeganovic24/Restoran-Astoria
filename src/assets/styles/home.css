@@ -1,0 +1,163 @@
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 520px; /* Prilagodite visinu po želji */
+    margin-top: 0px; /* Prilagodite prema visini vašeg header-a */
+    background-image: url('../images/restaurant-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Transparentni overlay */
+}
+
+.hero-text {
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+    padding-top: 200px; /* Vertikalno centriranje teksta */
+    color: white;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    min-height: 480px; /* Ovo je ključna promjena - dajemo više prostora */
+
+
+
+}
+.reservation-form {
+    max-width: 700px;
+    height: 250px;
+    margin: 610px auto;
+    background: white;
+    padding: 8rem 4rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #ffd700;
+    box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.2);
+}
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+.submit-btn {
+    width: 55%;
+    padding: 12px;
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #ffed4a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reservation-btn {
+    display: inline-block;
+    position: absolute;
+    top: 105%;
+    left: 30%;
+
+    padding: 12px 30px;
+    margin-top: 2.5rem;
+    background-color: #ffd700;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-shadow: none;
+    transition: all 0.3s ease;
+}
+
+.reservation-btn:hover {
+    background-color: #ffed4a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Responsive dizajn */
+@media (max-width: 768px) {
+    .hero-image {
+        height: 400px;
+    }
+
+    .hero-text {
+        padding-top: 150px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+    .reservation-form {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .content {
+        padding: 2rem 1rem;
+    }
+
+}
