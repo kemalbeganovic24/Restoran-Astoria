@@ -1,12 +1,115 @@
-import React from 'react';
+import React, { useState } from 'react';
+import '../assets/styles/home.css';
+import { Link } from 'react-router-dom';
 
-function Home(){
+function Home() {
+    const [formData, setFormData] = useState({
+        ime: '',
+        email: '',
+        telefon: '',
+        datum: '',
+        vrijeme: '',
+        brojOsoba: '2'
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Podaci za rezervaciju:', formData);
+    };
+
     return (
-      <div className="content">
-          <h1>Dobro došli na našu React aplikaciju</h1>
-    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid amet assumenda autem consectetur dignissimos dolorum, eveniet fugiat fugit iure laboriosam nesciunt quas quod sint tempora velit vero voluptate! Natus.</span><span>Ab aspernatur, atque commodi consequatur consequuntur cupiditate distinctio earum enim eos, et excepturi, explicabo fugit impedit labore obcaecati saepe sapiente sequi sit totam unde! Amet asperiores consequuntur distinctio doloremque suscipit.</span><span>Debitis hic magni obcaecati! Accusamus at cupiditate dolor ea esse est, eveniet excepturi expedita, fuga hic id itaque laudantium nam nulla odit officiis provident quod sit sunt tempore, temporibus velit!</span><span>Amet corporis dolore doloremque earum possimus quam repellat voluptates. Ab blanditiis consectetur consequatur dolor doloremque ex facere fugiat ipsam iste magnam porro provident rem repellat reprehenderit suscipit unde, vitae voluptate.</span><span>A ab adipisci, alias assumenda atque autem commodi dolorum id, illo iure labore molestiae nam quidem, rerum vero voluptates voluptatibus? A architecto doloremque eveniet magnam magni possimus voluptatibus. Molestias, tenetur.</span><span>Adipisci architecto autem, blanditiis consequatur explicabo fugiat modi nam natus nobis, perspiciatis, possimus qui rem sit sunt voluptas. Debitis doloribus dolorum enim fugiat laboriosam libero obcaecati praesentium quidem tempore voluptatum?</span><span>Aut cum eveniet expedita iure laudantium molestias, mollitia provident quam. Alias animi debitis eum impedit, iure laudantium maxime nihil obcaecati officiis rerum sit, tempore totam veritatis. Cupiditate eligendi non sed!</span><span>Corporis doloremque ipsam non obcaecati quae veniam voluptate? Accusantium consequatur distinctio doloribus dolorum eius eos expedita facere, laborum officiis quidem ratione rem sapiente tempore. Cum impedit magni qui sequi tenetur.</span><span>Doloribus fuga, ipsam itaque maiores minima odio officiis omnis porro quod soluta! Culpa dolores doloribus, earum enim eum, eveniet in ipsam laudantium minima modi, numquam perspiciatis porro praesentium quibusdam saepe!</span><span>Blanditiis consectetur consequatur delectus dolorem expedita fugiat id iste iure laboriosam modi molestiae mollitia odio odit qui quibusdam quos rerum saepe sapiente, similique sunt suscipit unde voluptas voluptatibus? Exercitationem, modi!</span></p>
-    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid animi autem culpa, cupiditate dolor enim impedit incidunt iste laudantium magni, necessitatibus odit possimus quae quos, recusandae totam ut veritatis?</span><span>Ab alias amet assumenda cum distinctio dolor doloremque ducimus ea eos exercitationem maiores minima quaerat quas quasi, quia repellendus ullam ut vel. Assumenda dolor excepturi in itaque nihil quia, recusandae!</span><span>Adipisci amet, commodi, culpa dolor ducimus ex fuga incidunt nam necessitatibus neque nulla, odit praesentium quae quas quasi sit voluptate? Architecto beatae consequatur dicta dolores id ipsum nisi perspiciatis sit.</span><span>Accusamus adipisci aliquid architecto assumenda beatae consectetur deleniti, eum ex, impedit iusto maxime modi nemo non numquam odit omnis optio possimus quam qui, quisquam recusandae repellendus reprehenderit tempore tenetur veniam.</span><span>Accusamus amet consectetur dolorum excepturi illo incidunt iste, magnam modi necessitatibus nemo neque nihil nulla obcaecati officia officiis pariatur praesentium quidem quis recusandae repellendus rerum sequi suscipit, totam velit veniam.</span><span>Accusantium asperiores aspernatur beatae, culpa delectus dolor dolorem dolores ducimus expedita id impedit laudantium modi neque tempora ullam! A itaque non nostrum quae voluptates. A dolores explicabo minima mollitia ut?</span><span>Aperiam delectus eligendi ipsa ipsam maxime, minus qui quidem quis recusandae voluptatibus. Ab doloribus et ex exercitationem facilis, minus odio perferendis quasi sequi. Deserunt dignissimos ea eius fugiat iure minima!</span><span>Aperiam commodi, deserunt eligendi fugit harum illum incidunt labore laboriosam non nostrum officia perferendis reiciendis, velit. Beatae commodi consequatur dolor, esse facere id inventore itaque laborum quasi reprehenderit saepe tenetur?</span><span>Architecto dolor eveniet hic itaque minima officiis omnis quos soluta? Consequatur earum magni minus pariatur qui quos, ullam! Autem deleniti dolorum eius exercitationem fugit itaque laborum laudantium libero officia soluta!</span><span>Aliquam aliquid beatae laboriosam laborum magni nostrum officiis quisquam! Beatae deleniti dolorum ducimus et, illo illum ipsa, minus mollitia nam, nisi possimus repellendus totam voluptatum? Asperiores eveniet necessitatibus perspiciatis tempore.</span></p>
-      </div>
+        <>
+            <div className="hero-image">
+                <div className="hero-text">
+                    <h1>Dobro došli u naš restoran</h1>
+                    <p>Mjesto gdje se stvaraju nezaboravni trenuci</p>
+                    <Link to="/rezervacija" className="reservation-btn">
+                        Rezerviši Sto
+                    </Link>
+                </div>
+            </div>
+            <div className="content">
+                <form className="reservation-form" onSubmit={handleSubmit}>
+                    <h2>Rezervacija stola</h2>
+                    <div className="form-group">
+                        <input
+                            type="text"
+                            name="ime"
+                            value={formData.ime}
+                            onChange={handleChange}
+                            placeholder="Vaše ime i prezime"
+                            required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <input
+                            type="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            placeholder="Email adresa"
+                            required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <input
+                            type="tel"
+                            name="telefon"
+                            value={formData.telefon}
+                            onChange={handleChange}
+                            placeholder="Broj telefona"
+                            required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <input
+                            type="date"
+                            name="datum"
+                            value={formData.datum}
+                            onChange={handleChange}
+                            required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <input
+                            type="time"
+                            name="vrijeme"
+                            value={formData.vrijeme}
+                            onChange={handleChange}
+                            required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <select
+                            name="brojOsoba"
+                            value={formData.brojOsoba}
+                            onChange={handleChange}
+                            required
+                        >
+                            <option value="1">1 osoba</option>
+                            <option value="2">2 osobe</option>
+                            <option value="3">3 osobe</option>
+                            <option value="4">4 osobe</option>
+                            <option value="5">5 osoba</option>
+                            <option value="6">6 osoba</option>
+                            <option value="7+">7+ osoba</option>
+                        </select>
+                    </div>
+                    <button type="submit" className="submit-btn">
+                        Potvrdi rezervaciju
+                    </button>
+                </form>
+            </div>
+        </>
     );
 }
+
 export default Home;
