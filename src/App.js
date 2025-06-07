@@ -20,6 +20,7 @@ import TjesteninaPage from './components/TjesteninaPage';
 import PizzaPage from './components/PizzaPage';
 import PalacinkePage from './components/PalacinkePage';
 import PicaPage from './components/PicaPage';
+import Rezervacija from './components/rezervacija'
 
 
 
@@ -48,14 +49,15 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-              <Route path="/meni" element={<Meni />} />
+            <Route path="/meni" element={<Meni />} />
             <Route path="/piletina" element={<PiletinaPage />} />
             <Route path="/tjestenina" element={<TjesteninaPage />} />
             <Route path="/pizza" element={<PizzaPage />} />
             <Route path="/palacinke" element={<PalacinkePage />} />
             <Route path="/pica" element={<PicaPage />} />
             <Route path="/contact" element={<Contact />} />
-              <Route path="/order" element={<Order />} />
+            <Route path="/order" element={<Order />} />
+            <Route path="/rezervacija" element={<Rezervacija />} />
             <Route path="/register" element={<RegisterForma onRegister={setUlogovaniKorisnik} />} />
             <Route path="/login" element={<Login onLogin={setUlogovaniKorisnik} />} />
             <Route path="/welcome" element={<Welcome />} />
