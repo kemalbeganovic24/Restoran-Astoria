@@ -32,7 +32,7 @@ function Home() {
                     <h1>Dobro došli u naš restoran</h1>
                     <p>Mjesto gdje se stvaraju nezaboravni trenuci</p>
                     <Link to="/rezervacija" className="reservation-btn">
-                        Rezerviši Sto
+                        Rezerviši sto
                     </Link>
                 </div>
             </div>
