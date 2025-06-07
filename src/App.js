@@ -15,6 +15,11 @@ import '../src/assets/styles/stilovi.css'
 import {useEffect, useState} from "react";
 import Welcome from "./pages/welcome";
 import RegisterForma from "./components/RegisterForma";
+import PiletinaPage from './components/PiletinaPage';
+import TjesteninaPage from './components/TjesteninaPage';
+import PizzaPage from './components/PizzaPage';
+import PalacinkePage from './components/PalacinkePage';
+import PicaPage from './components/PicaPage';
 
 
 
@@ -44,6 +49,11 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
               <Route path="/meni" element={<Meni />} />
+            <Route path="/piletina" element={<PiletinaPage />} />
+            <Route path="/tjestenina" element={<TjesteninaPage />} />
+            <Route path="/pizza" element={<PizzaPage />} />
+            <Route path="/palacinke" element={<PalacinkePage />} />
+            <Route path="/pica" element={<PicaPage />} />
             <Route path="/contact" element={<Contact />} />
               <Route path="/order" element={<Order />} />
             <Route path="/register" element={<RegisterForma onRegister={setUlogovaniKorisnik} />} />
