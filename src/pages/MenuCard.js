@@ -15,7 +15,6 @@ function MenuCard({ title, imageUrl, onClick, showAddButton, price }) {
                         className="add-button"
                         onClick={(e) => {
                             e.stopPropagation();
-                            // Ovdje možete dodati logiku za dugme "Dodaj"
                         }}
                     >
                         Dodaj
