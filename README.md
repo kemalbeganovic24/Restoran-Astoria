@@ -122,15 +122,9 @@ Pokretanje JSON servera (u novom terminalu):
 1. npm install -g json server
 2. npm install json-server --save-dev
 3. json-server --watch db.json --port 5002
-
 4. (Ukoliko dođe do errora u termnalu, ukucati komandu cd naziv projekta)
 
-
-
-Snimci ekrana radne apliakcije
-
-
-# Resotran-Astoria
+# Snimci ekrana radne apliakcije
 ![Početna stranica](./screenshots/pocetna.png)
 ![Početna stranica1](./screenshots/pocetna1.png)
 ![Početna stranica2](./screenshots/pocetna2.png)
