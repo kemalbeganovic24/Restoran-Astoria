@@ -37,6 +37,7 @@
     color: white;
 }
 
+/* Hamburger */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -53,6 +54,7 @@
     transition: all 0.3s ease;
 }
 
+/* Open animation (X icon) */
 .menu-toggle.open span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -63,6 +65,7 @@
     transform: rotate(-45deg) translate(0px, -5px);
 }
 
+/* Navigation */
 .nav-list {
     display: flex;
     list-style: none;
@@ -89,6 +92,7 @@
     color: #fca311;
 }
 
+/* MOBILE STYLES */
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex;
