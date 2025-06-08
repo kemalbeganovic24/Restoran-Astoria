@@ -80,13 +80,6 @@ function ContactForm(){
 
                 <button type="submit">Pošalji!</button>
             </form>
-            <div className="map-container">
-                <p>Možete nas posjetiti na lokaciji</p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d984.8926670945217!2d17.912972633767435!3d44.20333810592933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ee39bbcc2715f%3A0x7b9acd2396aaf6b7!2sAstoria%20Pancakes%20and%20Pizza!5e1!3m2!1sen!2sba!4v1748972451379!5m2!1sen!2sba"
-                    width="600" height="450" style={{border: '0'}} allowFullScreen="" loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"></iframe>
-            </div>
         </div>
     );
 }
