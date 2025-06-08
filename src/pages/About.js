@@ -1,6 +1,5 @@
 import React from 'react';
 import '../assets/styles/about.css';
-// Import slika - prilagodite nazive prema vašim stvarnim slikama
 import restoran1Image from '../assets/images/restoran1.jpg';
 import restoran2Image from '../assets/images/restoran2.jpeg';
 import restoran3Image from '../assets/images/restoran3.jpeg';
