@@ -34,7 +34,6 @@ Projekt predstavlja web aplikaciju za restoran Astoria koja omogućava korisnici
  3.2 Ključni fajlovi
 - `src/App.js` - Glavni React komponent
 - `src/index.js` - Entry point aplikacije
-- `src/data.js` - Fajl sa podacima
 - `db.json` - Backend simulacija baze podataka
 - `src/components/` - Reusable komponente
 - `src/pages/` - Stranice aplikacije
@@ -42,17 +41,13 @@ Projekt predstavlja web aplikaciju za restoran Astoria koja omogućava korisnici
 
  # 4. Funkcionalnosti
 
- 4.1 Osnovne funkcionalnosti
-- Pregled menija restorana
-- Sistem rezervacija
-- Pregled informacija o restoranu
-- Responsive dizajn za različite uređaje
-
- 4.2 Tehnička implementacija
-- Single Page Application (SPA) arhitektura
-- Routing sistem za navigaciju
-- Simulirana backend integracija preko JSON Servera
-- Testiranje komponenti
+Prikaz glavne stranice s pozadinskom slikom i pozivom na akciju
+Navigacijski meni s prilagođenim izgledom i hamburger menijem za mobilne uređaje
+Kontakt forma
+Mogućnost rezervacije stola
+Samo prijavljeni korisnici mogu naručiti hranu
+Gosti imaju samo pregled menija i da kontaktiraju
+Administrator vidi admin panel koji može da vidi narudžbe i kontakt poruke
 
  # 5. Dizajn
  
@@ -73,20 +68,24 @@ Projekt predstavlja web aplikaciju za restoran Astoria koja omogućava korisnici
 - Pregled informacija o restoranu
 - Mogućnost rezervacije
 
- 6.2 Administrator (ako postoji)
+ 6.2 Administrator 
 - Upravljanje rezervacijama
 - Ažuriranje sadržaja
 
  # 7. Pokretanje projekta
 Za pokretanje projekta potrebno je izvršiti sljedeće komande:
- bash
-Instalacija zavisnosti
-npm install
 
-Pokretanje aplikacije
+1. Instalacija
+   npm install
+2. Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+Pokretanje aplikacije:
 npm start
 
-Pokretanje JSON servera (u novom terminalu)
-npm run server
+Pokretanje JSON servera (u novom terminalu):
+
+1. npm install -g json server
+2. npm install json-server --save-dev
+3. json-server --watch db.json --port 5002
 
 
