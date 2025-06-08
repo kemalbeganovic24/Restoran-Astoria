@@ -1,9 +1,9 @@
 # Resotran-Astoria
 
-1. Kratki Opis
+# 1. Kratki Opis
 Projekt predstavlja web aplikaciju za restoran Astoria koja omogućava korisnicima pregled menija, rezervacije i interakciju sa restoranskim sadržajem.
 
-2. Korištene Tehnologije
+# 2. Korištene Tehnologije
 - Frontend Framework: React.js 18.2.0
 - Routing: React Router DOM 7.6.1
 - Backend Simulacija: JSON Server 1.0.0-beta.3
@@ -17,7 +17,7 @@ Projekt predstavlja web aplikaciju za restoran Astoria koja omogućava korisnici
     - react-dom 18.2.0
     - web-vitals 2.1.4
 
- 3. Struktura Projekta
+# 3. Struktura Projekta
     
  3.1 Glavni direktoriji
 
@@ -40,7 +40,7 @@ Projekt predstavlja web aplikaciju za restoran Astoria koja omogućava korisnici
 - `src/pages/` - Stranice aplikacije
 - `src/assets/` - Slike i drugi statični resursi
 
- 4. Funkcionalnosti
+ # 4. Funkcionalnosti
 
  4.1 Osnovne funkcionalnosti
 - Pregled menija restorana
@@ -54,7 +54,8 @@ Projekt predstavlja web aplikaciju za restoran Astoria koja omogućava korisnici
 - Simulirana backend integracija preko JSON Servera
 - Testiranje komponenti
 
- 5. Dizajn
+ # 5. Dizajn
+ 
  5.1 Arhitektura
 - Komponentno-bazirana arhitektura
 - Modularni pristup razvoju
@@ -65,7 +66,8 @@ Projekt predstavlja web aplikaciju za restoran Astoria koja omogućava korisnici
 - Intuitivna navigacija
 - Konzistentan vizualni identitet
 
- 6. Korisničke uloge
+# 6. Korisničke uloge
+
  6.1 Posjetitelj
 - Pregled menija
 - Pregled informacija o restoranu
@@ -75,20 +77,16 @@ Projekt predstavlja web aplikaciju za restoran Astoria koja omogućava korisnici
 - Upravljanje rezervacijama
 - Ažuriranje sadržaja
 
- 7. Pokretanje projekta
+ # 7. Pokretanje projekta
 Za pokretanje projekta potrebno je izvršiti sljedeće komande:
  bash
-# Instalacija zavisnosti
+Instalacija zavisnosti
 npm install
 
-# Pokretanje aplikacije
+Pokretanje aplikacije
 npm start
 
-# Pokretanje JSON servera (u novom terminalu)
+Pokretanje JSON servera (u novom terminalu)
 npm run server
 
-## 8. Testiranje
-Za pokretanje testova:
- bash
-npm test
 
