@@ -84,9 +84,10 @@ Administrator vidi admin panel koji može da vidi narudžbe i kontakt poruke
 # 7. Dizajn:
 Boje:
 
-#fca311 (narančasta – primarna)
-#000000 i #ffffff (kontrast)
-Tamni overlay (rgba(0, 0, 0, 0.5)) na hero slici
+#ACC572
+#FFDF88
+#FFA55D
+#white
 
 Fontovi:
 
