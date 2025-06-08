@@ -1,3 +1,9 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  font-family: Arial, Helvetica, sans-serif;
+}
 .meni-container {
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
@@ -143,9 +149,6 @@
 
 .back-button {
     font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    top:120px;
-    left: 20px;
     padding: 12px 24px;
     background-color: #fca311;
     color: white;
@@ -155,9 +158,49 @@
     font-size: 16px;
     transition: all 0.3s ease;
     z-index: 1000;
+    display: block;
+    margin: 15px auto 40px auto; 
 }
 
 .back-button:hover {
     background-color: black;
     transform: translateY(-2px);
+}
+@media (max-width: 1024px) {
+  .menu-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-cards-container {
+    gap: 15px;
+    padding: 20px 15px;
+    margin-right: 23px;
+  }
+  .menu-card {
+    width: 100%; 
+  }
+  .section-title {
+    font-size: 1.8rem;
+    max-width: 100%;
+  }
+
+  .back-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-card-content h3 {
+    font-size: 1rem;
+  }
+  .price {
+    font-size: 1rem;
+  }
+  .add-button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
 }
