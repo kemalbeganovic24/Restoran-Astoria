@@ -30,7 +30,7 @@ function Home() {
         <>
             <div className="hero-image">
                 <div className="hero-text">
-                    <h1 className="pisani-tekst">Dobro došli u naš restoran !</h1>
+                    <h1 className="pisani-tekst-home">Dobro došli u naš restoran !</h1>
                     <p >Mjesto gdje se stvaraju nezaboravni trenuci!</p>
                     <Link to="/rezervacija" className="reservation-btn">
                         Rezerviši sto
