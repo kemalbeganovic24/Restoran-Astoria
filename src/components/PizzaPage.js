@@ -22,10 +22,10 @@ function PizzaPage() {
 
     return (
         <div className="meni-container">
+         <h2 className="section-title">Pizza</h2>
             <button className="back-button" onClick={() => navigate('/meni')}>
                 Nazad na Meni
             </button>
-            <h2 className="section-title">Pizza</h2>
             <div className="menu-cards-container">
                 {pizzaJela.map((jelo, index) => (
                     <MenuCard
