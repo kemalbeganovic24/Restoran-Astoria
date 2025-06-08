@@ -23,10 +23,11 @@ function PiletinaPage() {
 
     return (
         <div className="meni-container">
-         <h2 className="section-title">Pileća Jela</h2>
+            <h2 className="section-title">Pileća Jela</h2>
             <button className="back-button" onClick={() => navigate('/meni')}>
                 Nazad na Meni
             </button>
+            
             <div className="menu-cards-container">
                 {piletinaJela.map((jelo, index) => (
                     <MenuCard

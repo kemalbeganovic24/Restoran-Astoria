@@ -22,7 +22,7 @@ function Rezervacija(){
     
         const handleSubmit = (e) => {
             e.preventDefault();
-            alert('Podaci za rezervaciju:', formData);
+            console.log('Podaci za rezervaciju:', formData);
         };
     
         return (

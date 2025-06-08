@@ -20,10 +20,11 @@ function PicaPage() {
 
     return (
         <div className="meni-container">
-        <h2 className="section-title">Pića</h2>
+            <h2 className="section-title">Pića</h2>
             <button className="back-button" onClick={() => navigate('/meni')}>
                 Nazad na Meni
             </button>
+            
             <div className="menu-cards-container">
                 {picaJela.map((jelo, index) => (
                     <MenuCard

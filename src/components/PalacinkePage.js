@@ -21,8 +21,8 @@ function PalacinkePage() {
     ];
 
     return (
-        <div className="meni-container">
-         <h2 className="section-title">Palačinke</h2>
+        <div className="meni-container"> 
+            <h2 className="section-title">Palačinke</h2>
             <button className="back-button" onClick={() => navigate('/meni')}>
                 Nazad na Meni
             </button>

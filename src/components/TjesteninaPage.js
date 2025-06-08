@@ -19,10 +19,11 @@ function TjesteninaPage() {
 
     return (
         <div className="meni-container">
-        <h2 className="section-title">Tjestenina</h2>
+            <h2 className="section-title">Tjestenina</h2>
             <button className="back-button" onClick={() => navigate('/meni')}>
                 Nazad na Meni
             </button>
+            
             <div className="menu-cards-container">
                 {tjesteninaJela.map((jelo, index) => (
                     <MenuCard
