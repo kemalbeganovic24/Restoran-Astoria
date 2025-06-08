@@ -152,3 +152,5 @@ Pokretanje JSON servera (u novom terminalu):
 ![AdminPanel](./screenshots/adminnarudzbe.png)
 ![AdminKontakt](./screenshots/adminporuke.png)
 
+![PaletaBoja](./screenshots/paletaboja.png)
+
