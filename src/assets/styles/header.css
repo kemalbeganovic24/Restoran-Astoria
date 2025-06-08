@@ -2,21 +2,18 @@
     font-family: Arial, Helvetica, sans-serif;
     position: fixed;
     top: 0;
-    left:0;
+    left: 0;
     width: 100%;
     height: 13%;
     z-index: 1000;
     background-color: #fca311;
     transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.pisani-tekst{
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem;
-    margin: 15px;
-}
+
 .header.scrolled {
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
 }
 
 .navbar {
@@ -24,42 +21,118 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
+    height: 100%;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+    border-radius: 40%;
+}
+
+.pisani-tekst-header {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2rem;
+    margin: 15px;
+    color: white;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    z-index: 1100;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(0px, -5px);
 }
 
 .nav-list {
-    list-style: none;
     display: flex;
-    align-items: center;
+    list-style: none;
     gap: 20px;
     padding: 0;
 }
 
-.logo {
-    height: 80px;
-    width: auto;
-    border-radius: 40%;
-    margin-left: 25px;
-}
-
-.nav-list li a {
+.nav-list li a,
+.nav-list li button {
     text-decoration: none;
     color: white;
     font-weight: 500;
-    font-size: 1.25rem;
-    padding: 4px 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-    white-space: nowrap;
+    font-size: 1.1rem;
+    padding: 6px 14px;
+    border-radius: 8px;
+    background: transparent;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-list li a:hover {
+.nav-list li a:hover,
+.nav-list li button:hover {
     background-color: white;
     color: #fca311;
 }
 
-.nav-list li .active {
-    background-color: transparent;
-    color: white;
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .pisani-tekst-header {
+        font-size: 1.2rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: rgba(252, 163, 17, 0.95);
+        width: 100%;
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.4s ease;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        align-items: center;
+    }
+
+    .nav-list.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .pisani-tekst {
+        display: none;
+    }
+
+    .nav-list li {
+        margin: 15px 0;
+    }
+    
 }
 
+@media (max-width: 480px) {
+    .pisani-tekst-home {
+        font-size: 1.5rem;
+    }
+}
 
