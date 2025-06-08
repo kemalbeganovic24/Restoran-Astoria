@@ -101,3 +101,26 @@ form button[type="submit"]:hover {
     background-color: black;
     color: white;
 }
+@media (max-width: 480px) {
+    .login-box {
+        padding: 50px;
+        max-width: 90%;
+        border-radius: 8;
+        height: 90vh;
+        box-shadow:#000000
+    }
+
+    form label {
+        font-size: 0.9rem;
+    }
+
+    form input {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    form button[type="submit"] {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
