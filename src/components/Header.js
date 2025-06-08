@@ -27,7 +27,7 @@ function Header({ korisnik, onLogout }) {
         <header className={`header ${scrolled ? "scrolled" : ""}`}>
             <nav className="navbar">
                 <img src={logo} alt="Logo" className="logo" />
-                <p className="pisani-tekst">Gdje se svaki zalogaj pamti !</p>
+                <p className="pisani-tekst-header">Gdje se svaki zalogaj pamti !</p>
                 <ul className="nav-list">
                     <li><NavLink to="/">Početna</NavLink></li>
                     <li><NavLink to="/about">O nama</NavLink></li>
