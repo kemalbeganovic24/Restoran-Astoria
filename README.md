@@ -4,18 +4,13 @@
 Projekt predstavlja web aplikaciju za restoran Astoria koja omogućava korisnicima pregled menija, rezervacije i interakciju sa restoranskim sadržajem.
 
 # 2. Korištene Tehnologije
-- Frontend Framework: React.js 18.2.0
-- Routing: React Router DOM 7.6.1
-- Backend Simulacija: JSON Server 1.0.0-beta.3
-- Testing biblioteke:
-    - @testing-library/react 16.3.0
-    - @testing-library/dom 10.4.0
-    - @testing-library/jest-dom 6.6.3
-    - @testing-library/user-event 13.5.0
-    - Package Manager: npm
-    - Ostale važne biblioteke:
-    - react-dom 18.2.0
-    - web-vitals 2.1.4
+Frontend: React.js
+Routing: React Router
+Stilizacija: CSS (custom stilovi)
+Fontovi: Google Fonts (Dancing Script, Arial)
+Ikonice i slike: FontAwesome, PNG/JPG slike
+Deployment (opcionalno): GitHub 
+
 
 # 3. Struktura Projekta
     
@@ -92,7 +87,9 @@ Boje:
 #fca311 (narančasta – primarna)
 #000000 i #ffffff (kontrast)
 Tamni overlay (rgba(0, 0, 0, 0.5)) na hero slici
+
 Fontovi:
+
 Dancing Script (naslovi, dekoracija)
 Arial, Helvetica, sans-serif (tekst)
 
@@ -104,8 +101,8 @@ Admin - Ima pristup admin panelu i može upravljati sadržajem
 # 9. Kratki opis doprinosa članova tima
 Ime člana	Doprinos
 
-Ramo Kozlić	- Frontend dizajn i Meni
-Emir Đelilbašić	- Routing, Diazjn, Slider
+Ramo Kozlić	- Frontend dizajn i Meni,
+Emir Đelilbašić	- Routing, Diazjn, Slider,
 Kemal Beganović	Admin panel, funkcionalnost
 
 Svi	Testiranje i zajednička dorada dizajna
@@ -125,5 +122,7 @@ Pokretanje JSON servera (u novom terminalu):
 1. npm install -g json server
 2. npm install json-server --save-dev
 3. json-server --watch db.json --port 5002
+
+4. (Ukoliko dođe do errora u termnalu, ukucati komandu cd naziv projekta)
 
 
