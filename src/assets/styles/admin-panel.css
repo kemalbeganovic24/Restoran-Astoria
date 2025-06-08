@@ -148,3 +148,97 @@ h2{
     font-weight: bold;
     font-size: 1.2rem;
 }
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        top: auto;
+        left: 0;
+        padding: 1rem;
+        box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: space-around;
+        z-index: 1000;
+    }
+    
+  
+    .admin-container {
+        margin-left: 0;
+        padding: 1rem;
+        padding-bottom: 4rem; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .order-item {
+        padding: 1rem;
+    }
+
+    .order-info p, .order-info ul li {
+        font-size: 0.9rem;
+    }
+
+    .approve-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;  
+    background-color: #ffffff;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    z-index: 1000;
+  }
+
+  .sidebar h2 {
+    display: none; 
+  }
+
+  .sidebar ul {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  .sidebar li {
+    padding: 0;
+  }
+
+  .sidebar a {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+  
+  .sidebar a.active {
+    text-decoration: underline;
+  }
+
+  .admin-container {
+    margin-left: 0;
+    padding-bottom: 60px; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
