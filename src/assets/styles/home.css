@@ -53,14 +53,14 @@
     }
 
     .hero-text {
-    max-width: 100%;
-    width: auto;
+        max-width: 100%;
+        width: auto;
     }
 
     .hero-text h1 {
-        font-size: 2rem;      
+        font-size: 2rem;
         white-space: nowrap;
-    } 
+    }
 
     .hero-text p {
         font-size: 1.1rem;
