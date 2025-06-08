@@ -21,15 +21,29 @@ Projekt predstavlja web aplikaciju za restoran Astoria koja omogućava korisnici
     
  3.1 Glavni direktoriji
 
-/
-├── Restoran-Astoria-main/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── assets/
-│   │   └── App.js
-│   ├── public/
-│   └── db.json
+root/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/
+│   │   ├── images/
+│   │   └── styles/
+│   │       ├── header.css
+│   │       ├── home.css
+│   │       └── contact.css
+│   ├── components/
+│   │   ├── Header.js
+│   │   └── Footer.js
+│   ├── pages/
+│   │   ├── Home.js
+│   │   ├── About.js
+│   │   ├── Contact.js
+│   │   ├── Meni.js
+│   │   ├── Order.js
+│   │   └── Admin.js
+│   ├── App.js
+│   └── index.js
+
 
  3.2 Ključni fajlovi
 - `src/App.js` - Glavni React komponent
@@ -67,12 +81,36 @@ Administrator vidi admin panel koji može da vidi narudžbe i kontakt poruke
 - Pregled informacija o restoranu
 - Mogućnost rezervacije
 
- 6.2 Administrator 
+ 6.2. Administrator 
 - Upravljanje narudžbama (Odobravanje narudžbih)
 - Pregled naružbih
 - Pregled Kontakt poruka 
 
- # 7. Pokretanje projekta
+# 7. Dizajn:
+Boje:
+
+#fca311 (narančasta – primarna)
+#000000 i #ffffff (kontrast)
+Tamni overlay (rgba(0, 0, 0, 0.5)) na hero slici
+Fontovi:
+Dancing Script (naslovi, dekoracija)
+Arial, Helvetica, sans-serif (tekst)
+
+# 8. Uloge korisnika
+Uloga	Dozvole
+Gost - Može pregledati sadržaj, napraviti rezervaciju i naručiti
+Admin - Ima pristup admin panelu i može upravljati sadržajem
+
+# 9. Kratki opis doprinosa članova tima
+Ime člana	Doprinos
+
+Ramo Kozlić	- Frontend dizajn i Meni
+Emir Đelilbašić	- Routing, Diazjn, Slider
+Kemal Beganović	Admin panel, funkcionalnost
+
+Svi	Testiranje i zajednička dorada dizajna
+
+ # . Pokretanje projekta
 Za pokretanje projekta potrebno je izvršiti sljedeće komande:
 
 Instalacija
