@@ -97,20 +97,24 @@ h2 {
 }
 
 .success-message {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-top: 1rem;
-    color: green;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    opacity: 1;
+    animation: fadeInOut 4s forwards;
+    z-index: 1000;
+    animation-fill-mode: forwards;  
 }
 
-.success-message {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-top: 1rem;
-    font-weight: bold;
-    color: green;
-}
+
 
 .error-message {
     font-family: Arial, Helvetica, sans-serif;
