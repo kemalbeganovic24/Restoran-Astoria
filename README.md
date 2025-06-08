@@ -125,6 +125,9 @@ Pokretanje JSON servera (u novom terminalu):
 3. json-server --watch db.json --port 5002
 4. (Ukoliko dođe do errora u termnalu, ukucati komandu cd naziv projekta)
 
+5. Za Admina kemal@size.ba Šifra 1234
+6. Za korisnika ime@size.ba Šifra123
+
 # Snimci ekrana radne apliakcije
 ![Početna stranica](./screenshots/pocetna.png)
 ![Početna stranica1](./screenshots/pocetna1.png)
