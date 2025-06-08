@@ -34,7 +34,7 @@ function PizzaPage() {
                         title={jelo.title}
                         imageUrl={jelo.imageUrl}
                         price={jelo.price}
-                        showAddButton={true}
+                        showAddButton={false}
                     />
                 ))}
             </div>

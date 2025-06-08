@@ -30,7 +30,7 @@ function Header({ korisnik, onLogout }) {
         <header className={`header ${scrolled ? "scrolled" : ""}`}>
             <nav className="navbar">
                 <img src={logo} alt="Logo" className="logo" />
-                <p className="pisani-tekst-header">Gdje se svaki zalogaj pamti !</p>
+                <p className="pisani-tekst-header">"Astoria – srce doma u svakom zalogaju."</p>
 
                 <div className={`menu-toggle ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
