@@ -33,7 +33,6 @@ Projekt predstavlja web aplikaciju za restoran Astoria koja omogućava korisnici
 
  3.2 Ključni fajlovi
 - `src/App.js` - Glavni React komponent
-- `src/index.js` - Entry point aplikacije
 - `db.json` - Backend simulacija baze podataka
 - `src/components/` - Reusable komponente
 - `src/pages/` - Stranice aplikacije
@@ -69,14 +68,15 @@ Administrator vidi admin panel koji može da vidi narudžbe i kontakt poruke
 - Mogućnost rezervacije
 
  6.2 Administrator 
-- Upravljanje rezervacijama
-- Ažuriranje sadržaja
+- Upravljanje narudžbama (Odobravanje narudžbih)
+- Pregled naružbih
+- Pregled Kontakt poruka 
 
  # 7. Pokretanje projekta
 Za pokretanje projekta potrebno je izvršiti sljedeće komande:
 
-1. Instalacija
-   npm install
+Instalacija
+1. npm install
 2. Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 
 Pokretanje aplikacije:
